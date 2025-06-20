@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-[#ceb8a4] text-[#302216];
+}
+
+.montserrat-font {
+  font-family: "montserrat";
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: local("montserrat"),
+    url("./assets/fonts/Montserrat.ttf") format("truetype");
+}
+
+.colatin-font {
+  font-family: "colatin";
+}
+
+@font-face {
+  font-family: "colatin";
+  src: local("colatin"),
+    url("./assets/fonts/MTD-Colatin.otf") format("truetype");
+}
+
+.btn-effect {
+  @apply bg-[#422f1e] py-2 px-4 rounded-sm hover:bg-[#f2cbcb] hover:duration-400 hover:ease-in-out hover:text-[#422f1e] cursor-pointer;
+}
+
+.title {
+  @apply text-[36px] font-bold leading-[48px] tracking-[0em];
+}
+
+.pulse-opacity animation {
+  opacity: 0.213862;
+  transform: scale(1.08015);
+}
+
+.img-container {
+  @apply absolute w-28 h-28 bg-[#422f1e] flex justify-center items-center opacity-20 rounded-full z-10;
+}
+
+.animation-pulse-opacity {
+  opacity: 0.2;
+  animation: pulse-opacity 1.5s linear infinite;
+}
+
+@keyframes pulse-opacity {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
+
+@keyframes moveAlong {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.bean-motion {
+  offset-path: path(
+    "M171.617 1.48242C137.635 76.7144 66 44.999 36 55.9993C6 66.9995 1.64822 82.146 1.64822 82.146"
+  );
+  offset-rotate: 350deg;
+  animation: moveAlong 3s ease-in-out forwards;
+  position: absolute;
+  width: 60px;
+  height: auto;
+}
+
+
+@layer utilities {
+  .animate-slide-down {
+    animation: slideDown 1s ease forwards;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+}
