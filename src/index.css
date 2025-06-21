@@ -41,6 +41,36 @@ body {
   @apply absolute w-28 h-28 bg-[#422f1e] flex justify-center items-center opacity-20 rounded-full z-10;
 }
 
+@keyframes moveLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animation-move-left {
+  animation: moveLeft 0.8s ease-out forwards;
+}
+
+.animation-move-right {
+  animation: moveRight 0.8s ease-out forwards;
+}
+
 .animation-pulse-opacity {
   opacity: 0.2;
   animation: pulse-opacity 1.5s linear infinite;
