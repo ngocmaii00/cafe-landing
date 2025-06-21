@@ -60,6 +60,17 @@ body {
   }
 }
 
+.bean-motion {
+  offset-path: path(
+    "M171.617 1.48242C137.635 76.7144 66 44.999 36 55.9993C6 66.9995 1.64822 82.146 1.64822 82.146"
+  );
+  offset-rotate: 350deg;
+  animation: moveAlong 3s ease-in-out forwards;
+  position: absolute;
+  width: 72px;
+  height: auto;
+}
+
 @keyframes moveAlong {
   from {
     offset-distance: 0%;
@@ -68,18 +79,6 @@ body {
     offset-distance: 100%;
   }
 }
-
-.bean-motion {
-  offset-path: path(
-    "M171.617 1.48242C137.635 76.7144 66 44.999 36 55.9993C6 66.9995 1.64822 82.146 1.64822 82.146"
-  );
-  offset-rotate: 350deg;
-  animation: moveAlong 3s ease-in-out forwards;
-  position: absolute;
-  width: 60px;
-  height: auto;
-}
-
 
 @layer utilities {
   .animate-slide-down {

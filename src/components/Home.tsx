@@ -3,13 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Home() {
   return (
-    <div className="montserrat-font">
-      <div className="">
-        <div className="bg-gradient-to-b from-transparent via-transparent to-[#302216c2] w-full h-[945px] top-0 absolute"></div>
-        <img src="/desktop.jpg" alt="photo" className="mt-22 w-full" />
+    <div className="montserrat-font relative">
+      <div className="relative w-full overflow-hidden">
+        <img
+          src="/desktop.jpg"
+          alt="photo"
+          className="w-full h-full object-cover object-center mt-20"
+        />
+        <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b from-transparent to-[#302216d2] z-10"></div>
       </div>
 
-      <div className="flex flex-col items-center gap-4 text-white -translate-y-24">
+      <div className="flex flex-col items-center gap-4 text-white -translate-y-24 z-20 relative">
         <FontAwesomeIcon
           icon={faArrowDownLong}
           size="1x"
