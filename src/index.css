@@ -43,7 +43,7 @@ body {
 
 @keyframes moveLeft {
   from {
-    transform: translateX(-50px);
+    transform: translateX(-100px);
     opacity: 0;
   }
   to {
@@ -54,7 +54,7 @@ body {
 
 @keyframes moveRight {
   from {
-    transform: translateX(50px);
+    transform: translateX(100px);
     opacity: 0;
   }
   to {
@@ -90,9 +90,20 @@ body {
   }
 }
 
-.bean-motion {
+.bean-motion-1 {
   offset-path: path(
     "M171.617 1.48242C137.635 76.7144 66 44.999 36 55.9993C6 66.9995 1.64822 82.146 1.64822 82.146"
+  );
+  offset-rotate: 350deg;
+  animation: moveAlong 3s ease-in-out forwards;
+  position: absolute;
+  width: 72px;
+  height: auto;
+}
+
+.bean-motion-2 {
+  offset-path: path(
+    "M1.29688 1.69336C53.1774 93.6787 248.733 -14.6328 312.221 82.2264"
   );
   offset-rotate: 350deg;
   animation: moveAlong 3s ease-in-out forwards;
@@ -122,5 +133,20 @@ body {
     to {
       transform: translateY(0%);
     }
+  }
+}
+
+.animation-open {
+  width: 100px;
+  height: 100px;
+  animation: open 0.5s ease-in-out forwards;
+}
+
+@keyframes open {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

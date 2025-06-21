@@ -1,8 +1,9 @@
+
 function Stories() {
   return (
-    <>
+    <div className="bg-gradient-to-t from-transparent via-[#cfb9a5] to-[#cfb9a5] -translate-y-12">
       <section className="flex flex-col items-center gap-4 mx-[380px] montserrat-font mb-6">
-        <span className="title py-2">
+        <span className="title py-2 pt-16">
           Khám phá câu chuyện của những nghệ nhân tạo nên từng tách cà phê mà
           bạn đang thưởng thức
         </span>
@@ -16,16 +17,16 @@ function Stories() {
           Gặp Gỡ Những Nghệ Nhân Cà Phê
         </span>
         <div className="relative">
-          <img src="/line.webp" className="absolute top-6 scale-125" />
-          <div className="flex items-center gap-20 mb-8">
+          <img src="/line.webp" className="absolute top-6 scale-125 xl:block hidden" />
+          <div className="flex items-center gap-12 lg:gap-20 mb-8 flex-col lg:flex-row">
             {elements1.map((item) => (
               <Element elements={item} />
             ))}
           </div>
         </div>
-        <div className="">
-          <img src="/line.webp" className="absolute right-[300px] scale-105 translate-y-4" />
-          <div className="flex items-center gap-24">
+        <div className="relative">
+          <img src="/line.webp" className="absolute scale-400 translate-y-10 xl:block hidden" />
+          <div className="flex items-center gap-12 lg:gap-24 flex-col lg:flex-row">
             {elements2.map((item) => (
               <Element elements={item} />
             ))}
@@ -33,7 +34,7 @@ function Stories() {
         </div>
         <div className=""></div>
       </section>
-    </>
+    </div>
   );
 }
 
