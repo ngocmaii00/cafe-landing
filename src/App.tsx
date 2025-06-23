@@ -1,3 +1,4 @@
+import Footer from "./common/Footer";
 import Header from "./common/Header";
 import Characteristics from "./components/Characteristics";
 import Home from "./components/Home";
@@ -6,13 +7,14 @@ import Stories from "./components/Stories";
 
 function App() {
   return (
-    <>
+    <div>
       <MoveTop />
       <Header />
       <Home />
       <Stories />
       <Characteristics />
-    </>
+      <Footer />
+    </div>
   );
 }
 

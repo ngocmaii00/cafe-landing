@@ -10,7 +10,7 @@ function Home() {
           alt="photo"
           className="w-full h-full object-cover object-center mt-20"
         />
-        <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b from-transparent to-[#302216d2] z-10"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-b from-transparent to-[#112201ab] z-10"></div>
       </div>
 
       <div className="flex flex-col items-center gap-4 text-white -translate-y-24 z-20 relative">

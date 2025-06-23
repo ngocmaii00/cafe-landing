@@ -1,7 +1,17 @@
 @import "tailwindcss";
 
 body {
-  @apply bg-[#ceb8a4] text-[#302216];
+  @apply bg-[#81b085] text-[#052808];
+}
+
+.dancing-font {
+  font-family: "dancingscript";
+}
+
+@font-face {
+  font-family: "dancingscript";
+  src: local("dancingscript"),
+    url("./assets/fonts/DancingScript.ttf") format("truetype");
 }
 
 .montserrat-font {
@@ -97,7 +107,7 @@ body {
   offset-rotate: 350deg;
   animation: moveAlong 3s ease-in-out forwards;
   position: absolute;
-  width: 72px;
+  width: 52px;
   height: auto;
 }
 
@@ -108,7 +118,18 @@ body {
   offset-rotate: 350deg;
   animation: moveAlong 3s ease-in-out forwards;
   position: absolute;
-  width: 72px;
+  width: 52px;
+  height: auto;
+}
+
+.bean-motion-3 {
+  offset-path: path(
+    "M354 1C285.588 118.746 109 26 0.999996 73"
+  );
+  offset-rotate: 350deg;
+  animation: moveAlong 3s ease-in-out forwards;
+  position: absolute;
+  width: 52px;
   height: auto;
 }
 
